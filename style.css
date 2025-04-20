@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #4b2e83;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #4b2e83;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.image-stack {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.image-stack img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.profile-pic {
+  width: 180px;
+  border-radius: 100px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
