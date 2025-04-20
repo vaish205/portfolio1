@@ -13,36 +13,43 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#activities">Activities</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="about">
-  <h2>About Me</h2>
-  <p>Hello! I'm Vaishnavi, a second-year B.Tech student specializing in Information Technology at G. Narayanamma Institute of Technology and Science, graduating in 2027.</p>
-  <p>With a strong interest in technology and innovation, I'm constantly exploring new tools and ideas, I believe in creating things that acctually make a difference.</p>
-  <p>Beyond academics, I'm actively involved in leadership and service through the Rotaract Club, where I organize and lead community-driven initiatives. I'm also a passionate MUN delegate and speaker.</p>
-<img src="images/profile.jpg" alt="Vaishnavi's Profile Picture" class="profile-pic">
-</section>
+    <h2>About Me</h2>
+    <p>Hello! I'm Vaishnavi, a second-year B.Tech student specializing in Information Technology at G. Narayanamma Institute of Technology and Science, graduating in 2027.</p>
+    <p>With a strong interest in technology and innovation, I'm constantly exploring new tools and ideas. I believe in creating things that actually make a difference.</p>
+    <p>Beyond academics, I'm actively involved in leadership and service through the Rotaract Club, where I organize and lead community-driven initiatives. I'm also a passionate MUN delegate and speaker.</p>
+    <img src="images/profile.jpg" alt="Vaishnavi's Profile Picture" class="profile-pic">
+  </section>
 
   <section id="projects">
-  <h2>Tech Projects</h2>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>AI-Powered Skincare</h3>
+      <p>This was my mini project, built with a team equally passionate about real-life issues. It detects common skin conditions through video input and offers personalized skincare and dietary suggestions based on the results. While the idea may not be entirely new, we’re proud that we chose to work on something we personally relate to as students. It was more than just a technical build—it was a meaningful challenge that helped us connect technology with everyday experiences.</p>
 
-  <div class="project">
-    <h3>AI-Powered Skincare</h3>
-    <p>This was my mini project, built with a team equally passionate about real-life issues. It detects common skin conditions through video input and offers personalized skincare and dietary suggestions based on the results. While the idea may not be entirely new, we’re proud that we chose to work on something we personally relate to as students. It was more than just a technical build—it was a meaningful challenge that helped us connect technology with everyday experiences.</p>
-
-    <div class="image-stack">
-      <img src="images/skin1.jpg" alt="Skin Analysis UI">
-      <img src="images/skin2.jpg" alt="Video Detection in Progress">
-      <img src="images/skin3.jpg" alt="Recommendations Screen">
+      <div class="image-stack-vertical">
+        <img src="images/skin1.jpg" alt="Skin Analysis UI">
+        <img src="images/skin2.jpg" alt="Video Detection in Progress">
+        <img src="images/skin3.jpg" alt="Recommendations Screen">
+      </div>
     </div>
-  </div>
+  </section>
 
-</section>
-  
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skill-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Java</li>
+      <li>Python</li>
+    </ul>
+  </section>
 
   <section id="contact"> 
     <h2>Contact Me</h2>
@@ -51,7 +58,26 @@
   </section>
 
   <footer>
-</script>
+    <p>&copy; 2025 Vaishnavi Puligilla.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
 </body>
 </html>
-
